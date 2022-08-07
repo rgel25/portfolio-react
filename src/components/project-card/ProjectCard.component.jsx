@@ -5,7 +5,12 @@ import ProjectCardCarousel from "../project-card-carousel/ProjectCardCarousel.co
 export default function ProjectCard({ imageSrc, project }) {
   const { id, name, techStack, description, url, githubUrl } = project;
   return (
-    <div className="rounded border-dark overflow-hidden project-img-hover-zoom--brightness">
+    <div
+      data-aos="zoom-in-up"
+      data-aos-delay={`${100 * id}`}
+      data-aos-once
+      className="rounded border-dark overflow-hidden project-img-hover-zoom--brightness"
+    >
       <a data-bs-toggle="modal" data-bs-target={`#project-${id}`}>
         <img
           src={imageSrc}

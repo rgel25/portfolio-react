@@ -40,7 +40,11 @@ export default function Projects() {
         id="projects"
         className="projects-container container d-flex flex-column justify-content-center align-items-center position-relative"
       >
-        <div className="projects-header text-center mb-5">
+        <div
+          data-aos="zoom-in-up"
+          data-aos-once
+          className="projects-header text-center mb-5"
+        >
           <h2 className="display-4 text-orange fw-bold">Featured Projects</h2>
           <p>
             A collection of the best web applications I've made. Pick a card

@@ -35,7 +35,12 @@ export default function Pagination({
   return (
     <>
       {pageNumbers.length > 1 ? (
-        <nav aria-label="..." className="p-2">
+        <nav
+          data-aos="zoom-in-down"
+          data-aos-once
+          aria-label="..."
+          className="p-2"
+        >
           <ul className="pagination pagination-sm" id="pagination">
             <li
               className={`page-item ${

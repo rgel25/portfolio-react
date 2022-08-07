@@ -63,9 +63,9 @@ export default function Playground() {
     setCurrentPage((prevCurrentPage) => prevCurrentPage + 1);
   }
 
-  const projectElements = currentProjects.map((project) => {
+  const projectElements = currentProjects.map((project, i) => {
     return (
-      <PlayGroundProjectModal key={project.id} project={project} />
+      <PlayGroundProjectModal key={project.id} project={project} i={i} />
       // <div className="col-3">
       //   <button
       //     key={project.id}
@@ -106,14 +106,22 @@ export default function Playground() {
         id="projects"
         className="projects-container container d-flex flex-column justify-content-center align-items-center position-relative"
       >
-        <div className="projects-header text-center playground-projects-header">
+        <div
+          data-aos="zoom-in-down"
+          data-aos-once
+          className="projects-header text-center playground-projects-header"
+        >
           <h2 className="display-4 text-orange fw-bold">Playground</h2>
           <p>
             A collection of the smaller projects I've created. Pick a card below
             to see more details about a project.
           </p>
         </div>
-        <div className="container text-center">
+        <div
+          data-aos="zoom-in-down"
+          data-aos-once
+          className="container text-center"
+        >
           <button
             className="filter btn btn-orange btn-sm btn-filter-active me-2 mb-2"
             onClick={handleFilter}

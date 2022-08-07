@@ -129,10 +129,10 @@ export default function Contact() {
       <div className="container d-flex align-items-center justify-content-center min-vh-100">
         <div className="row g-5 w-100">
           <div className="col-12 col-md-6 mb-3">
-            <div className="row mb-3">
+            <div data-aos="zoom-in-up" data-aos-once className="row mb-3">
               <h3 className="display-5 text-orange">Send me an email!</h3>
             </div>
-            <div className="row">
+            <div data-aos="zoom-in-up" data-aos-once className="row">
               <div className="col-12">
                 {isLoading ? (
                   <Spinner />
@@ -191,10 +191,14 @@ export default function Contact() {
             </div>
           </div>
           <div className="col-12 col-md-6 text-center p-0 mb-5">
-            <div className="row mb-3">
+            <div data-aos="zoom-in-up" data-aos-once className="row mb-3">
               <h3 className="display-5 ps-3 text-orange">Contacts</h3>
             </div>
-            <div className="row mb-4 contacts-row">
+            <div
+              className="row mb-4 contacts-row"
+              data-aos="zoom-in-up"
+              data-aos-once
+            >
               <h4 className="fs-5">
                 <div className="contacts-icons-container email-container">
                   <svg
@@ -212,7 +216,12 @@ export default function Contact() {
                 argelrmiralles@gmail.com
               </h4>
             </div>
-            <div className="row mb-4 contacts-row">
+            <div
+              data-aos="zoom-in-up"
+              data-aos-once
+              data-aos-delay="100"
+              className="row mb-4 contacts-row"
+            >
               <h4 className="fs-5">
                 <div className="contacts-icons-container phone-container">
                   <svg
@@ -230,7 +239,12 @@ export default function Contact() {
                 +63 927 6302 875
               </h4>
             </div>
-            <div className="row mb-4 contacts-row">
+            <div
+              className="row mb-4 contacts-row"
+              data-aos="zoom-in-up"
+              data-aos-once
+              data-aos-delay="200"
+            >
               <h4 className="fs-5">
                 <div className="contacts-icons-container linkedin-container">
                   <svg
@@ -255,7 +269,12 @@ export default function Contact() {
                 </a>
               </h4>
             </div>
-            <div className="row mb-4 contacts-row">
+            <div
+              className="row mb-4 contacts-row"
+              data-aos="zoom-in-up"
+              data-aos-once
+              data-aos-delay="300"
+            >
               <h4 className="fs-5">
                 <div className="contacts-icons-container github-container">
                   <svg

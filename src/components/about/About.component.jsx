@@ -34,13 +34,17 @@ export default function About() {
       >
         <div className="row mx-1 g-5">
           <div className="col-12 col-md-6">
-            <div className="row mb-3">
+            <div data-aos="zoom-in-right" data-aos-once className="row mb-3">
               <h3 className="display-5 text-orange p-0">About Me</h3>
             </div>
-            <div className="row mb-3 mb-md-4">
+            <div
+              data-aos="zoom-in-right"
+              data-aos-once
+              className="row mb-3 mb-md-4"
+            >
               <AboutSVG className="img-fluid w-50 m-auto" />
             </div>
-            <div className="row mb-3">
+            <div data-aos="zoom-in-right" data-aos-once className="row mb-3">
               I'm a solution-oriented full-stack web developer who thrives in
               fast-paced working environments. I am experienced in developing
               powerful and responsive web applications using modern
@@ -49,7 +53,7 @@ export default function About() {
               and I have an absurd amount of passion in learning new
               technologies.
             </div>
-            <div className="row mb-3">
+            <div data-aos="zoom-in-right" data-aos-once className="row mb-3">
               I am a KodeGo Coding Bootcamp graduate. I learned a plethora of
               skills in the bootcamp but I'd say the highlight of this learning
               experience is I got to lead a small team (three, including myself)
@@ -59,7 +63,11 @@ export default function About() {
             <div className="row">
               {/* https://drive.google.com/file/d/1Yz-1-qpRB9CjJMf6Ski34bG_gp8EC-DS/view?usp=sharing */}
               <div className="col-12 p-0">
-                <div className="d-grid d-md-inline me-md-2 p-0">
+                <div
+                  data-aos="zoom-in-right"
+                  data-aos-once
+                  className="d-grid d-md-inline me-md-2 p-0"
+                >
                   <a
                     className="btn btn-blue mb-2 mb-md-0 about-btn"
                     href="https://drive.google.com/file/d/1Yz-1-qpRB9CjJMf6Ski34bG_gp8EC-DS/view?usp=sharing"
@@ -80,7 +88,12 @@ export default function About() {
                     Download CV
                   </a>
                 </div>
-                <div className="d-grid d-md-inline me-md-2 p-0">
+                <div
+                  data-aos="zoom-in-right"
+                  data-aos-once
+                  data-aos-delay="200"
+                  className="d-grid d-md-inline me-md-2 p-0"
+                >
                   <a
                     className="btn btn-green mb-2 mb-md-0 about-btn"
                     href="https://github.com/rgel25"
@@ -100,7 +113,12 @@ export default function About() {
                     GitHub
                   </a>
                 </div>
-                <div className="d-grid d-md-inline p-0">
+                <div
+                  data-aos="zoom-in-right"
+                  data-aos-once
+                  data-aos-delay="400"
+                  className="d-grid d-md-inline p-0"
+                >
                   <button
                     className="btn btn-pink about-btn mt-0 mt-md-2 mt-xl-0"
                     type="button"
@@ -127,11 +145,21 @@ export default function About() {
           </div>
           <div className="col-12 col-md-6">
             <div className="row">
-              <h3 className="display-5 text-orange p-0">My Skills</h3>
+              <h3
+                data-aos="zoom-in-left"
+                data-aos-once
+                className="display-5 text-orange p-0"
+              >
+                My Skills
+              </h3>
             </div>
             <div className="row p-0 m-auto">
               <div className="row m-auto">
-                <div className="col p-0 mb-1">
+                <div
+                  data-aos="zoom-in-left"
+                  data-aos-once
+                  className="col p-0 mb-1"
+                >
                   <h3 className="text-center p-0 mt-1">
                     Frontend Technologies
                   </h3>
@@ -141,6 +169,9 @@ export default function About() {
                 {skills.frontEnd.map((skill, i) => {
                   return (
                     <div
+                      data-aos="zoom-in-left"
+                      data-aos-once
+                      data-aos-delay={`${i * 100 + 100}`}
                       className="tech-card-fe col-4 col-lg-3 m-0 p-0 text-center "
                       key={i}
                     >
@@ -160,7 +191,11 @@ export default function About() {
                 })}
               </div>
               <div className="row m-auto">
-                <div className="col p-0 mb-1">
+                <div
+                  data-aos="zoom-in-left"
+                  data-aos-once
+                  className="col p-0 mb-1"
+                >
                   <h3 className="text-center p-0 mt-1">Backend Technologies</h3>
                 </div>
               </div>
@@ -168,6 +203,9 @@ export default function About() {
                 {skills.backEnd.map((skill, i) => {
                   return (
                     <div
+                      data-aos="zoom-in-left"
+                      data-aos-delay={`${i * 100 + 100}`}
+                      data-aos-once
                       className="tech-card-be col-4 col-lg-3 p-0 m-0 text-center"
                       key={i}
                     >
@@ -191,10 +229,17 @@ export default function About() {
                   <h3 className="text-center p-0 mt-1">Developer Tools</h3>
                 </div>
               </div>
-              <div className="row m-auto p-0 justify-content-center">
+              <div
+                data-aos="zoom-in-left"
+                data-aos-once
+                className="row m-auto p-0 justify-content-center"
+              >
                 {skills.devTools.map((skill, i) => {
                   return (
                     <div
+                      data-aos="zoom-in-left"
+                      data-aos-once
+                      data-aos-delay={`${i * 100 + 100}`}
                       className="tech-card-dt col-4 col-lg-3 m-0 p-0 text-center"
                       key={i}
                     >

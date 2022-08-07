@@ -9,8 +9,11 @@ import { Element } from "react-scroll";
 import Playground from "./components/playground/Playground.component";
 import Contact from "./components/contact/Contact.component";
 import Footer from "./components/Footer/Footer.component";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 function App() {
+  Aos.init();
   React.useEffect(() => {
     document.title = "Argel Miralles | Web Developer";
   }, []);
