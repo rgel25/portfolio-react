@@ -1,5 +1,7 @@
 import React from "react";
 
+import { Fade } from "react-awesome-reveal";
+
 export default function PlayGroundProjectModal(props) {
   const { id, name, techStack, description, tag, url, githubUrl } =
     props.project;
@@ -10,24 +12,23 @@ export default function PlayGroundProjectModal(props) {
   };
 
   return (
-    <div
-      data-aos="zoom-in-down"
-      data-aos-delay={`${props.i * 100 + 100}`}
-      data-aos-once
-      className="col-6 col-md-3 my-3"
-    >
-      <div
-        className={`card playground-project-card card-${tag}`}
-        data-bs-toggle="modal"
-        data-bs-target={`#min-project-${id}-modal`}
-      >
-        <img src={require(`../../assets/images/card-${tag}.png`)} alt={name} />
-        <div className="card-overlay p-0">
-          <p className="fs-4 fw-bold m-0">{name}</p>
-          <p className="fs-6 m-0 fst-italic">{`<${tagFormatter(tag)}>`}</p>
+    <div className="col-6 col-md-3 my-3">
+      <Fade delay={props.i * 150} triggerOnce="true">
+        <div
+          className={`card playground-project-card card-${tag}`}
+          data-bs-toggle="modal"
+          data-bs-target={`#min-project-${id}-modal`}
+        >
+          <img
+            src={require(`../../assets/images/card-${tag}.png`)}
+            alt={name}
+          />
+          <div className="card-overlay p-0">
+            <p className="fs-4 fw-bold m-0">{name}</p>
+            <p className="fs-6 m-0 fst-italic">{`<${tagFormatter(tag)}>`}</p>
+          </div>
         </div>
-      </div>
-
+      </Fade>
       <div
         className="modal fade"
         id={`min-project-${id}-modal`}
