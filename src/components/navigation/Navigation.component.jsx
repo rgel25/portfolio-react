@@ -27,7 +27,7 @@ export default function Navigation() {
       <div className="container-fluid container-md px-md-4">
         <Link
           activeClass="section-active"
-          className="nav-initials"
+          className="nav-initials ms-2"
           to="hero"
           spy={true}
           smooth={true}
@@ -37,7 +37,7 @@ export default function Navigation() {
         </Link>
         <button
           type="button"
-          className="btn d-md-none"
+          className="btn d-md-none nav-btn"
           data-bs-toggle="modal"
           data-bs-target="#navbar-modal"
         >

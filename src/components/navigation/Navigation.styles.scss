@@ -92,3 +92,12 @@
     transform-origin: 0% 50%;
   }
 }
+
+.nav-btn:focus svg {
+  color: var(--color-orange);
+}
+
+.nav-btn {
+  border: none;
+  box-shadow: none;
+}
