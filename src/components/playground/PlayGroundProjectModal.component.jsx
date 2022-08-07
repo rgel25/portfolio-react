@@ -10,11 +10,13 @@ export default function PlayGroundProjectModal(props) {
   };
 
   return (
-    <div className="col-6 col-md-3 my-3">
+    <div
+      data-aos="zoom-in-down"
+      data-aos-delay={`${props.i * 100 + 100}`}
+      data-aos-once
+      className="col-6 col-md-3 my-3"
+    >
       <div
-        data-aos="zoom-in-down"
-        data-aos-delay={`${props.i * 100 + 100}`}
-        data-aos-once
         className={`card playground-project-card card-${tag}`}
         data-bs-toggle="modal"
         data-bs-target={`#min-project-${id}-modal`}
