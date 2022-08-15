@@ -5,8 +5,8 @@ const ProjectsData = [
     techStack: "MongoDB, Express, React, and NodeJS",
     description:
       "Sacred Symbols is an e-commerce web application built using the MERN Stack. It features modern UI/UX design, system architecture using MERN, and popular E-Commerce functionalities like shopping carts, account authentication and authorization, Admin dashboard, checkout flow integration with Paypal and Stripe",
-    url: "/",
-    githubUrl: "/",
+    url: "https://sacredsymbols.herokuapp.com/",
+    githubUrl: "https://github.com/rgel25/sacred-symbols",
   },
   {
     id: 2,
