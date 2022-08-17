@@ -70,7 +70,7 @@ export default function About() {
                 >
                   <a
                     className="btn btn-blue mb-2 mb-md-0 about-btn"
-                    href="https://drive.google.com/file/d/1Yz-1-qpRB9CjJMf6Ski34bG_gp8EC-DS/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1KE345b5-fGmOAkanDTVUgQfugQqxKtxw/view?usp=sharing"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
